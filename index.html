@@ -3,19 +3,40 @@
     <head>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <meta charset="utf-8">
-        <link href="animate.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <link href="main.css" rel="stylesheet">
-        <title> </title>
+        <title>Pavlo Pomirko</title>
     </head>
     <body>
+        <nav>
+                   <ul>
+                      <li>
+                         <a href="index.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="#experience">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="#h2">About</a>
+                      </li>
+                      <li>
+                          <a href="#phone">Contact</a>
+                      </li>
+                   </ul>
+                </nav>
+                <div class="handle">Just click me</div>
         <div class="container">
             
-            <div class="head">
+                <div class="head">
                 <div class="name">Pavlo Pomirko</div>
                 <div class="hat"><img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/profile.png" alt="worker" class="worker"></div>
                 <div class="options">Student----*----Student</div>
                   </div>
-            </div>  <div class="boxes">
+                  </div>
+                  <div id="experience">
+                      Portfolio
+                  </div>
+                    <div class="boxes">
                     <div class="image house">
                        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png" alt="house">
                     </div>
@@ -35,16 +56,25 @@
                        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/submarine.png" alt="boat">
                     </div>   
                     </div>
+                    <div id="experience1">
+                      
+                  </div>
             <div class="about">
-                
+                <h2 id="h2">About</h2>
+                <p class="tricolumn">In 1939, after the Polish September Campaign and the accompanying Soviet invasion, the Soviet occupiers permitted classes to continue. Until late 1939, the school worked in the pre-war Polish system. On October 18, however, the Polish rector, Professor Roman Longchamps de Bérier was dismissed, and was replaced by a prominent Ukrainian historian, Mykhailo Marchenko, grandfather of Ukrainian journalist and dissident Valeriy Marchenko. Marchenko was determined to transform the University of Lwow into the Ukrainian National University.[3] On January 8, 1940, the university was renamed Ivan Franko Lviv State University. Polish professors and administrative assistants were increasingly fired and replaced by Ukrainians or Russians, specializing in Marxism, Leninism, political economics, as well as Ukrainian and Soviet literature, history and geography. This was accompanied by the closing of departments seen as related with the religion, free-market economics, capitalism, or the West in general; this included Polish geography, literature, or history. Lectures were held in Ukrainian and Polish (as auxiliary). In the period 1939-1941 the Soviets also executed over a dozen members of the Polish faculty.</p>
             </div>
-            <div class="contact">
+            <div class="contact" id="phone">
                 
             </div>
             <div class="adress">
                 
             </div>
         </div>
-
+       <script>
+           $('.handle').on('click', function()
+           {
+               $('nav ul').toggleClass('showing');
+           })
+       </script>
     </body>
 </html>

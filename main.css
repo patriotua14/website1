@@ -4,11 +4,12 @@ body
     margin: 0;
     padding: 0;
 }
+
+/* Шапка */
 .container
 {  
     display: flex;
-    margin: 20px auto;
-    padding: 10px 20px 20px 20px;
+    margin: 0px;
     max-width: 100%;
     justify-content: center;
     align-items: stretch;
@@ -16,6 +17,75 @@ body
     align-content: stretch;
     
 }
+.head
+{   
+    flex: 1 1 700px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #18bc9c;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    justify-content: center;
+}
+.hat
+{
+    align-self: center;
+    transition: 2s;
+}
+.hat:hover
+{
+    transform: rotate(360deg);
+    transition: 2.5s;
+}
+.worker
+{
+    flex-basis: 40%;
+    
+}
+.options
+{  
+   align-self: center;
+   font-size: 50px;
+   color: white;
+   animation-name: cool;
+    animation-duration: 9s;
+}
+.name
+{   
+    align-self: center;
+    color: white;
+    font-size: 70px;
+    animation-name: cool;
+    animation-duration: 5s;
+}
+
+
+/* Links */
+#experience
+{   
+    display: flex;
+    font-size: 60px;
+    color: #2C3E50;
+    border-bottom: 7px solid #2C3E50;
+    width: 50%;
+    justify-content:center;
+    margin: 10px auto;
+}
+#experience1
+{
+    display: flex;
+    border-top: 7px solid #2C3E50;
+    width: 50%;
+    justify-content:center;
+    margin: 10px auto;
+}
+
+
+/* Portfolio */
 .boxes
 {
     flex: 1 1 700px;
@@ -33,7 +103,7 @@ body
 .house 
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .house:hover
 {
@@ -59,7 +129,6 @@ body
 {
     opacity: 0.5;
     transition: 0.4s;
-    width: 100px;
 }
 .boat:hover
 {
@@ -69,27 +138,27 @@ body
 .cake
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .tent
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .game
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .safe
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .boat
 {   
     margin: 10px 10px 10px 10px;
-    flex-basis: 400px;
+    flex-basis: 440px;
 }
 .image img
 {
@@ -97,77 +166,9 @@ body
     height: auto;
     border-radius: 40px;
 }
-.head
-{   
-    flex: 1 1 700px;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 20px 20px;
-    border-radius: 25px;
-    background-color: #18bc9c;
-    width: 100%;
-    position: relative;
-    height: 600px;
-    justify-content: center;
-}
-.hat
-{
-    align-self: center;
-}
-.hat:hover
-{
-    animation: spin;
-    animation-duration: 2.5s;
-}
-.worker
-{
-    flex-basis: 40%;
-    
-}
-.text
-{
-    flex: 1 1 200px;
-    color: white;
-}
-.name
-{   
-    align-self: center;
-    color: white;
-    font-size: 70px;
-    animation-name: cool;
-    animation-duration: 5s;
-}
-.options
-{  
-   align-self: center;
-   font-size: 50px;
-   color: white;
-   animation-name: cool;
-    animation-duration: 9s;
-}
-.about
-{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding: 20px 20px;
-    height: 500px;
-    width: 100%;
-    background-color: #18bc9c;
-}
-.contact
-{
-    padding: 20px 20px;
-    height: 500px;
-    width: 100%;
-    
-}
-.adress
-{
-    padding: 20px 20px;
-    height: 200px;
-    width: 100%;
-    background-color: #2C3E50;
-}
+
+
+/* Animation */
 @keyframes cool
 {   from
   {
@@ -199,4 +200,209 @@ body
     {
         opacity: 0.5;
     }
+}
+
+/*
+
+.button
+{   
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: #2C3E50;
+    color: white;
+}
+.navbar
+{   
+    color: white;
+    font-size: 40px;
+    align-self: flex-start;
+    font-family: sans-serif;
+    margin: 10px auto;
+    transition: 0.7s;
+   
+
+}
+.navbar:hover
+{
+    opacity: 0;
+    transition: 1s;
+}
+.home
+{   
+    width: 8%;
+    font-size: 25px;
+    align-self: center;
+    margin: 10px 30px 10px 50px;
+    background-color: #2C3E50;
+    color: white;
+    transition: 0.7s;
+}
+.portfolio
+{   
+    font-size: 25px;
+    align-self: center;
+    margin: 10px 30px 10px 50px;
+    width: 8%;
+    background-color: #2C3E50;
+    color: white;
+    transition: 0.7s;
+}
+.about1
+{
+    width: 8%;
+    font-size: 25px;
+    align-self: center;
+    margin: 10px 30px 10px 50px;
+    background-color: #2C3E50;
+    color: white; 
+    transition: 0.7s;
+}
+.contact1
+{
+    width: 8%;
+    font-size: 25px;
+    align-self: center;
+    margin: 10px 30px 10px 50px;
+    background-color: #2C3E50;
+    color: white;
+    transition: 0.7s;
+}
+.home:hover
+{
+    color: #18bc9c;
+    width: 10%;
+    font-size: 32px;
+    transition: 0.7s;
+}
+.portfolio:hover
+{
+    color: #18bc9c;
+    width: 10%;
+    font-size: 32px;
+    transition: 0.7s;
+}
+.about1:hover
+{
+    color: #18bc9c;
+    width: 10%;
+    font-size: 32px;
+    transition: 0.7s;
+}
+.contact1:hover
+{
+    color: #18bc9c;
+    width: 10%;
+    font-size: 32px;
+    transition: 0.7s;
+}
+*/
+
+/*Меню*/
+nav ul
+{
+    background-color: #2C3E50;
+    font-size: 30px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin: 0;
+    transition: max-height 0.4s;
+    transition: 0.5s;
+}
+nav ul li:hover a{
+    color: #18bc9c;
+    font-size: 35px;
+    transition: 0.5s;
+}
+nav ul li
+{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a
+{
+    transition: 0.3s;
+}
+.handle
+{
+    width: 100%;
+    background-color: #2C3E50;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    font-size: 30px;
+}
+@media screen and (max-width: 800px)
+{
+    nav ul li
+    {   
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+    nav ul
+    {
+        max-height: 0px;
+    }
+    .showing
+    {
+        max-height: 20em;
+    }
+    .handle
+{
+    display: block
+}
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Footer */
+.adress
+{
+    height: 200px;
+    width: 100%;
+    background-color: #2C3E50;
+}
+.contact
+{
+    height: 500px;
+    width: 100%;
+}
+.about
+{   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: auto;
+    width: 100%;
+    background-color: #18bc9c;
+}
+.tricolumn
+{
+    -mz-column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    overflow: hidden;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0 15px 10px 15px;
+}
+h2
+{
+    font-size: 50px;
+    color: white;
 }
