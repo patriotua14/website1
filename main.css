@@ -1,0 +1,202 @@
+body
+{
+    background: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+.container
+{  
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px 20px 20px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+    align-content: stretch;
+    
+}
+.boxes
+{
+    flex: 1 1 700px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 100px 10px 100px;
+}
+.image
+{
+    
+    margin: 10px;
+    background: #fff;
+    flex: 1 1 1100px;
+}
+.house 
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.house:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.cake:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.tent:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.game:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.safe:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+    width: 100px;
+}
+.boat:hover
+{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.cake
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.tent
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.game
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.safe
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.boat
+{   
+    margin: 10px 10px 10px 10px;
+    flex-basis: 400px;
+}
+.image img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+.head
+{   
+    flex: 1 1 700px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 20px;
+    border-radius: 25px;
+    background-color: #18bc9c;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    justify-content: center;
+}
+.hat
+{
+    align-self: center;
+}
+.hat:hover
+{
+    animation: spin;
+    animation-duration: 2.5s;
+}
+.worker
+{
+    flex-basis: 40%;
+    
+}
+.text
+{
+    flex: 1 1 200px;
+    color: white;
+}
+.name
+{   
+    align-self: center;
+    color: white;
+    font-size: 70px;
+    animation-name: cool;
+    animation-duration: 5s;
+}
+.options
+{  
+   align-self: center;
+   font-size: 50px;
+   color: white;
+   animation-name: cool;
+    animation-duration: 9s;
+}
+.about
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 20px 20px;
+    height: 500px;
+    width: 100%;
+    background-color: #18bc9c;
+}
+.contact
+{
+    padding: 20px 20px;
+    height: 500px;
+    width: 100%;
+    
+}
+.adress
+{
+    padding: 20px 20px;
+    height: 200px;
+    width: 100%;
+    background-color: #2C3E50;
+}
+@keyframes cool
+{   from
+  {
+      opacity:0;
+  }
+    top
+  {
+      opacity:1;
+  }
+}
+@keyframes spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes click
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0.5;
+    }
+}
