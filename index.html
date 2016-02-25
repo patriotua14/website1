@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <link href="main.css" rel="stylesheet">
@@ -65,11 +64,28 @@
             </div>
             <div class="contact" id="phone">
                 
+                <form action="#" method="POST" autocomplete="on" enctype="multipart/form-data">
+                    <div>
+                    <input type="text" placeholder="Ваше ім'я" name="questionaboutjob" class="name1">
+                    </div>
+                    <div>
+                     <img src="note2.png" alt="iconletter"><input type="email" placeholder="Ваша почтова скринька" name="login-field" class="login1" required>
+                    </div>
+                    <div>
+                    <textarea type="text" name="yourmessage" rows="15" cols="40" class="comment">
+                        Ваше повідомлення
+                    </textarea>
+                    </div>
+                    <div class="btn11">
+                        <input type="submit" class="btn1" value="Надіслати">
+                    </div>
+                </form>
             </div>
             <div class="adress">
                 
             </div>
         </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
        <script>
            $('.handle').on('click', function()
            {
