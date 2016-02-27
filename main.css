@@ -3,6 +3,9 @@ body
     background: #fefefe;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
+    margin: auto;
+    
 }
 
 /* Шапка */
@@ -95,7 +98,6 @@ body
 }
 .image
 {
-    
     margin: 10px;
     background: #fff;
     flex: 1 1 1100px;
@@ -307,7 +309,7 @@ address
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 640px;
+    height: auto;
     width: 100%;
     background-color: #E9E9E9;
 }

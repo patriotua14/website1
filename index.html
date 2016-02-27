@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav>
-                   <ul>
+                <ul class="navbar">
                       <li>
                          <a href="index.html">Home</a>
                       </li>
@@ -22,8 +22,8 @@
                           <a href="#phone">Contact</a>
                       </li>
                    </ul>
-                </nav>
-                <div class="handle">Just click me</div>
+        </nav>
+            <div class="handle">Just click me</div>
         <div class="container">
             
                 <div class="head">
@@ -66,17 +66,17 @@
                 <form action="#" method="POST" autocomplete="on" enctype="multipart/form-data">
                     <h2 class="forform"> Contact </h2>
                     <div class="foricon">
-                    <table><tr class="firstrow"><td><img src="forum-user.png" alt="iconprofile"></td><td><input type="text" placeholder="Ваше ім'я" name="questionaboutjob" class="name1"></td></tr></table>
+                    <table><tr class="firstrow"><td><img src="forum-user.png" alt="iconprofile"></td><td><input type="text" placeholder="Your name" name="questionaboutjob" class="name1"></td></tr></table>
                     </div>
                     <div class="foricon"> 
-                     <table><tr class="firstrow"><td><img src="envelope.png" alt="iconletter"></td><td><input type="email" placeholder="Ваша поштова скринька" name="login-field" class="login1" required></td></tr></table></div>
+                     <table><tr class="firstrow"><td><img src="envelope.png" alt="iconletter"></td><td><input type="email" placeholder="Your email" name="login-field" class="login1" required></td></tr></table></div>
                     <div>
-                    <textarea type="text" name="yourmessage" rows="15" cols="40" class="comment">Ваше повідомлення
+                    <textarea type="text" name="yourmessage" rows="15" cols="40" class="comment">Comment
                         
                     </textarea>
                     </div>
                     <div class="btn11">
-                        <input type="submit" class="btn1" value="Надіслати">
+                        <input type="submit" class="btn1" value="Send">
                     </div>
                 </form>
             </div>
@@ -93,13 +93,15 @@
                             </div>
                         </div>
             </div>
+            <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+            <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script src="firstscript.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-       <script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+           <script>
            $('.handle').on('click', function()
            {
                $('nav ul').toggleClass('showing');
            })
        </script>
-    </body>
+     </body>
 </html>
