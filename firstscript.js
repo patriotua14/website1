@@ -13,11 +13,3 @@ $('a[href^="#"]').click(function () {
         return false;
     })
     
-$("#navbar").removeClass("default");
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 10) {
-        $("#navbar").addClass("default").fadeIn("fast");    
-    } else {
-        $("#navbar").removeClass("default").fadeIn("fast");
-    };
-});

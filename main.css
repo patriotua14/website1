@@ -5,7 +5,6 @@ body
     padding: 0;
     max-width: 1920px;
     margin: auto;
-    
 }
 
 /* Шапка */
@@ -301,7 +300,21 @@ address
     align-items: center;
     margin: 10px 24px 5px 24px;
 }
-
+.vk:hover
+{   
+    height: 60px;
+    transition: 0.2s;
+}
+ .face:hover
+ {
+    height: 61px;
+    transition: 0.2s;
+ }
+ .gmail:hover
+ {
+    height: 60px;
+    transition: 0.2s;
+ }
 
 /* Contact */
 .contact
