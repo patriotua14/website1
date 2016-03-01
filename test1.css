@@ -1,0 +1,25 @@
+body
+{
+    padding:0;
+    max-width: 1920px;
+    display: flex; 
+    flex-flow: row wrap;
+    
+}
+#test
+{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 100px 100px;
+    border: 20px solid black;
+    width: 200px;
+    height: 200px;
+}
+.container
+{
+    height: 900px;
+    width: 100%;
+    display: flex; 
+    flex-flow: row wrap;
+    border: 20px solid black;
+}
