@@ -30,7 +30,7 @@ body
     background-color: #18bc9c;
     width: 100%;
     position: relative;
-    height: 600px;
+    height: 800px;
     justify-content: center;
 }
 .hat
@@ -88,10 +88,14 @@ body
 
 
 /* Portfolio */
-#modalDiv
+.hard
 {
-    width: 700px;
-    height: 510px;
+    display: none;
+}
+#modalDiv
+{   
+    width: 600px;
+    height: 400px;
     position: fixed;
     cursor: pointer;
 }
@@ -262,6 +266,14 @@ a
 
 
 /* Adress*/
+
+
+.differenttext
+{
+    display: flex;
+    margin: 40px 40px;
+}
+
 .adress
 {   
     display: flex;
@@ -390,10 +402,23 @@ table
     color: white;
     font-family: sans-serif;
     margin: 0 15px 10px 15px;
+    padding: 30px;
 }
 h2
 {
     font-size: 50px;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
